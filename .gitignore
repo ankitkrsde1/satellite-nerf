@@ -1,0 +1,80 @@
+# ================================
+# Python
+# ================================
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# ================================
+# Virtual environments
+# ================================
+.venv/
+venv/
+env/
+.conda/
+
+# ================================
+# Jupyter
+# ================================
+.ipynb_checkpoints/
+
+# ================================
+# Secrets / credentials
+# ================================
+.env
+.env.*
+!.env.example
+*.json.key
+service-account*.json
+credentials*.json
+
+# ================================
+# Large datasets
+# ================================
+datasets/raw/*
+datasets/processed/*
+datasets/test_subset/*
+
+# Keep directory placeholders
+!datasets/raw/.gitkeep
+!datasets/processed/.gitkeep
+!datasets/test_subset/.gitkeep
+
+# ================================
+# Training outputs
+# ================================
+outputs/*
+!outputs/test_runs/
+!outputs/test_runs/colab/
+!outputs/test_runs/colab/.gitkeep
+!outputs/test_runs/kaggle/
+!outputs/test_runs/kaggle/.gitkeep
+!outputs/full_runs/
+!outputs/full_runs/vm/
+!outputs/full_runs/vm/.gitkeep
+
+# ================================
+# Model checkpoints
+# ================================
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# ================================
+# Experiment tracking
+# ================================
+wandb/
+runs/
+tensorboard/
+
+# ================================
+# Temporary files
+# ================================
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
